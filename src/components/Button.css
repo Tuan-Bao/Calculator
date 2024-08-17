@@ -1,0 +1,35 @@
+button {
+  height: 100%;
+  width: 25%;
+  line-height: 100%;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  border: 1px solid gray;
+  background: rgba(255, 255, 255, 1);
+}
+
+button.wide {
+  width: 50%;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+button:active {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+button.orange {
+  background: rgba(255, 159, 67, 1);
+  color: white;
+}
+
+button.orange:hover {
+  background: rgba(255, 159, 67, 0.7);
+}
+
+button.orange:active {
+  background: rgba(255, 159, 67, 0.4);
+}

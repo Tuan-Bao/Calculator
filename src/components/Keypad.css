@@ -1,0 +1,8 @@
+.keypad {
+  flex: 1;
+  border: 2px solid gray;
+}
+
+.keypad div {
+  height: 20%;
+}
