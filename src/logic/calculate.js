@@ -36,19 +36,6 @@ export default function calculate(
   }
 
   if (isOperation(buttonName)) {
-    if (operation.length === 0 && array.length !== 0) {
-      if (flag === false) {
-        let op = [...operation, buttonName];
-        setOperation(op);
-        setFlag(!flag);
-      } else if (flag === true) {
-        operation.pop();
-        let op = [...operation, buttonName];
-        setOperation(op);
-      }
-      return;
-    }
-
     var num;
     if (
       operation[operation.length - 1] === "x" ||
@@ -119,7 +106,7 @@ export default function calculate(
       let num = operate(num1, num2, cur_op);
       array.unshift(num);
     }
-    setArray(array);
+    setArray([]);
     setValue(array[0]);
     setOperation([]);
   }
